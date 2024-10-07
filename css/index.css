@@ -6,6 +6,8 @@
     --font-c-secondary: #000;
     --font-c-tertiary: hsl(0, 0%, 55%);
     --font-c-tertiary-dark: hsl(0, 0%, 41%);
+    --bg-c-primary: #000;
+    --bg-c-secondary: #fff;
   }
   
   /* Las adaptamos al modo oscuro */
@@ -188,4 +190,43 @@
     text-transform: uppercase;
     border: 2px solid var(--font-c-primary);
     padding: 2.5rem;
+  }
+  .article{
+    padding: 10rem;
+  }
+  .article__wrapper{
+    position: relative;
+  }
+  .article__img{
+    object-fit: cover;
+    max-width: 731px;
+  }
+  .text__container{
+    position: absolute;
+    padding: 5.625rem 0 0 5.625rem;
+    bottom: 0;
+    left: 50%;
+    background-origin: padding-box;
+    background-color: var(--bg-c-secondary);
+  }
+  .text__wrapper{
+    color: var(--font-c-secondary);
+    font-family: var(--font-secondary);
+    max-width: 28.75rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 40px;
+  }
+  .article__h3{
+    font-size: 52px;
+    text-transform: uppercase;
+    font-weight: 300;
+  }
+  .article__paragraph{
+    font-family: var(--font-primary);
+    color: var(--font-c-tertiary);
+    letter-spacing: .4px;
+    line-height: 1.5rem;
   }
