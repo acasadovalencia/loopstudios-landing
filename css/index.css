@@ -141,7 +141,6 @@
     -webkit-font-smoothing: antialiased;
     /* opcional */ 
     -moz-osx-font-smoothing: grayscale;
-    background-color: black;
   }
   .header{
     width: 100%;
@@ -173,6 +172,10 @@
   }
   .hero{
     position: relative;
+  }
+  .hero__img{
+    object-fit: cover;
+    filter: brightness(50%);
   }
   .h2__wrapper{
     position: absolute;
