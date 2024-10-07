@@ -1,20 +1,11 @@
 /* Aquí definimos las Custom properties */
 :root {
-    --font-c-secondary: #fff;
-    --font-c-secondary--active: #ffffff61;
-    --font-c-primary: #000;
-    --font-c-tertiary: hsl(232, 10%, 55%);
-    --font-c-tertiary-dark: hsl(213, 9%, 39%);
-    --font-c-cuaternary: hsl(167, 40%, 24%);
-    --font-c-quinary: hsl(198, 62%, 26%);
-    --font-c-senary: hsl(168, 34%, 41%);
-    --font-primary: "Barlow", sans-serif;
-    --font-secondary: "Fraunces", serif;
-    --bg-c-primary: #fff;
-    --bg-c-secondary: #000;
-    --bg-c-tertiary: hsl(51, 100%, 49%);
-    --bg-c-cuaternary: hsl(7, 99%, 70%);
-    --bg-c-quinary: hsl(168, 52%, 57%);
+    --font-primary: "Alata", sans-serif;
+    --font-secondary: "Josefin Sans", sans-serif;
+    --font-c-primary: #fff;
+    --font-c-secondary: #000;
+    --font-c-tertiary: hsl(0, 0%, 55%);
+    --font-c-tertiary-dark: hsl(0, 0%, 41%);
   }
   
   /* Las adaptamos al modo oscuro */
@@ -139,9 +130,10 @@
   /* Configuramos la tipografía para toda la web */
   body {
     min-height: 100vh;
-    font-size: 1.125rem;
+    font-size: .9375rem;
     font-family: var(--font-primary);
     font-weight: 600;
+    color: var(--font-c-primary);
     -webkit-hyphens: auto;
         -ms-hyphens: auto;
             hyphens: auto;
@@ -149,5 +141,30 @@
     -webkit-font-smoothing: antialiased;
     /* opcional */ 
     -moz-osx-font-smoothing: grayscale;
+    background-color: black;
   }
-  
+  .header{
+    width: 100%;
+  }
+  .header__h1{
+    position: relative;
+  }
+  .h1__span{
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+  }
+  .header__wrapper{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4.6875rem 10rem;
+  }
+  .header__ul{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1.875rem;
+  }
