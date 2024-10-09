@@ -172,6 +172,18 @@
     align-items: center;
     gap: 1.875rem;
   }
+  .header__li::after{
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2.5px;
+    background-color: var(--bg-c-secondary);
+    margin: .625rem auto 0;
+    transition: width .5s ease;
+  }
+  .header__li:hover::after{
+    width: 50%;
+  }
   .hero{
     position: relative;
   }
@@ -246,6 +258,12 @@
     padding: .9375rem 2.5rem;
     border: 2px solid var(--font-c-tertiary-dark);
     cursor: pointer;
+    transition: all .5s ease;
+  }
+  .section__btn:hover{
+    background-color: var(--bg-c-primary);
+    color: var(--font-c-primary);
+    border-color: var(--bg-c-primary);
   }
   .grid__container{
     padding: 5rem 10rem;
@@ -257,10 +275,18 @@
   }
   .grid__li{
     position: relative;
+    cursor: pointer;
   }
+  .grid__li:hover .grid__img{
+   opacity: 40%;
+  }
+  .grid__li:hover .grid__h4{
+    color: var(--font-c-secondary);
+   }
   .grid__img{
     object-fit: cover;
     filter: brightness(80%);
+    transition: all .5s ease;
   }
   .grid__h4{
     position: absolute;
@@ -271,6 +297,7 @@
     font-weight: 300;
     font-size: 2.5rem;
     text-shadow: 0px 2px 4px rgba(0,0,0, .6);
+    transition: all .5s ease;
   }
   .footer{
     background-color: var(--bg-c-primary);
@@ -296,6 +323,18 @@
     align-items: center;
     gap: 1.875rem;
   }
+  .footer__li::after{
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2.5px;
+    background-color: var(--bg-c-secondary);
+    margin: .625rem auto 0;
+    transition: width .5s ease;
+  }
+  .footer__li:hover::after{
+    width: 50%;
+  }
   .social__wrapper{
     display: flex;
     flex-flow: column nowrap;
@@ -310,6 +349,19 @@
     align-items: flex-start;
     gap: 1.875rem;
   }
+  .social__li::after{
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2.5px;
+    background-color: var(--bg-c-secondary);
+    margin: .625rem auto 0;
+    transition: width .5s ease;
+  }
+  .social__li:hover::after{
+    width: 100%;
+  }
   .copy{
     color: var(--font-c-tertiary-dark);
   }
+  
