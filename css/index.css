@@ -434,11 +434,17 @@
     }
   }
  @media(max-width:750px){
+  .hero__h2{
+    text-align: left;
+  }
   .section{
     margin: 0 0 11.875rem;
   }
   .grid__ul{
     padding: 0 0 4.0625rem;
+  }
+  .h3{
+    text-align: center;
   }
   .section__btn{
     top: initial;
@@ -469,3 +475,27 @@
     align-items: center;
   }
  } 
+ @media (max-width:665px){
+  .h2{
+    font-size: 3.875rem;
+  }
+ }
+ @media (max-width: 540px){
+  .hero{
+    height: 100vh;
+  }
+  .hero__picture{
+    height: 100%;
+  }
+  .hero__img{
+    height: 100%;
+  }
+  .h2__wrapper{
+    bottom: initial;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .h2{
+    font-size: 42px;
+  }
+ }
