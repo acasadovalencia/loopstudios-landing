@@ -408,6 +408,9 @@
     }
   }
   @media (max-width: 870px){
+    .header.isFixed{
+      position: fixed;
+    }
     .header__h1{
       z-index: 1;
     }
