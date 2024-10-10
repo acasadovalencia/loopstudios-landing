@@ -184,7 +184,7 @@
   .header__li:hover::after{
     width: 50%;
   }
-  .menu__svg{
+  .btn__wrapper{
     display: none;
   }
   .hero{
@@ -315,6 +315,11 @@
     justify-content: space-between;
     align-items: flex-start;
   }
+  .h6__span{
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+  }
   .menu__wrapper{
     display: flex;
     flex-flow: column nowrap;
@@ -426,11 +431,13 @@
       width: 100%;
       top: 0;
       left: 0;
+      opacity: 0;
       background-color: var(--bg-c-primary);
       overflow: hidden;
     }
     .header__nav.isActive{
       transform: translateX(0);
+      opacity: 1;
     }
     .header__ul{
         flex-flow: column nowrap;
@@ -447,7 +454,7 @@
     .btn__wrapper{
       position: relative;
     }
-    .menu__svg{
+    .btn__wrapper{
       display: block;
       transition: opacity 1s ease;
     }
