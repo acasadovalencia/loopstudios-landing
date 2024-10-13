@@ -143,6 +143,7 @@
     -webkit-font-smoothing: antialiased;
     /* opcional */ 
     -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
   }
   .header{
     width: 100%;
@@ -413,6 +414,9 @@
     }
   }
   @media (max-width: 870px){
+    .header-wrapper{
+      overflow: hidden;
+    }
     .header.isFixed{
       position: fixed;
     }
