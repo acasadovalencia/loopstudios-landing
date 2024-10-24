@@ -7,9 +7,6 @@ const header = document.querySelector('.header')
 
 const openNav = () =>{
     nav.classList.add('isActive')
-    if(nav.classList.contains('isActive')){
-        header.classList.add('isFixed')
-    }
 }
 
 const closeNav = () =>{

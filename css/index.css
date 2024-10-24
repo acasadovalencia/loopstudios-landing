@@ -435,12 +435,10 @@
       height: 100vh;
       top: 0;
       left: 0;
-      opacity: 0;
       background-color: var(--bg-c-primary);
     }
     .header__nav.isActive{
       transform: translateX(0);
-      opacity: 1;
       pointer-events: all;
     }
     .header__ul{
