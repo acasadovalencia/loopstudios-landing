@@ -6,7 +6,7 @@ const closeNavBtn = document.querySelector('.close__svg')
 const header = document.querySelector('.header')
 
 const openNav = () =>{
-    nav.classList.toggle('isActive')
+    nav.classList.add('isActive')
     if(nav.classList.contains('isActive')){
         header.classList.add('isFixed')
     }
